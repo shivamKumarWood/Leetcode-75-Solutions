@@ -3,4 +3,12 @@ For example:- word1="abc"   word2="pqr"
 initialise pos=0;   str=""  //To  store the result
 First iteration: pos=0   str="ap"
 Second iteration: pos=1   str="apbq"
-Third iteration:
+Third iteration: pos=2    str="apbqcr"
+
+If in case one string is larger than the other then we concat the remaining character of the larger string to str.
+For example:-  word1= "ab"   word2="pqrs"
+initialise pos=0;   str=""  //To  store the result
+First iteration: pos=0   str="ap"
+Second iteration: pos=1   str="apbq"
+remaining character of word2 are:  "rs"
+str="apbqrs"
