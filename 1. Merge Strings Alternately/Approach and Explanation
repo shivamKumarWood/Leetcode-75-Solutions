@@ -1,4 +1,6 @@
 Here, We have to print the characters of the Word1 and Word2 alternatively. We will take a variable pos to point at the current index and print the character at that index.
 For example:- word1="abc"   word2="pqr" 
 initialise pos=0;   str=""  //To  store the result
-First iteration print str="ap"
+First iteration: pos=0   str="ap"
+Second iteration: pos=1   str="apbq"
+Third iteration:
