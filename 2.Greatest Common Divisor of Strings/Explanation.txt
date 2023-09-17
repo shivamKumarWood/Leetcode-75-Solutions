@@ -1,0 +1,26 @@
+#Approach:1
+Suppose there are two Strings:  str1 = "ABCABC", str2 = "ABC"
+there length are n1=6,n2=3;
+We will call the helper function as (str1,str2) as n1>n2.
+We will initialise idx as str2.length() idx=3
+Now we will check if length of both the strings are completely divided by idx.
+str1:6%3=0 (true)
+str2:3%3=0 (true)   //We will continue the loop.
+Firstly we will check for str1 that whether str1 can be formed by repetition of substring.
+substring is taken as str2.substring(0,idx) i.e, "ABC"
+First iteration:
+str1.substring(0,3) = "ABC" ; //true
+Second iteration:
+str1.substring(3,6)= "ABC"; //true
+For str2:
+First iteration:
+str2.substring(0,3)= "ABC"; //true
+Since str1 and str2 matches with "ABC", we will return "ABC"
+
+
+#Approach:2
+In this Approach we will concanate str1+str2  and str2+str1  if both are not equal return "".
+after concanating "ABCABCABC"=="ABCABCABC" both are equal
+we get gcd of n1 and n2 and return str1.substring(0,gcdLength)
+
+
