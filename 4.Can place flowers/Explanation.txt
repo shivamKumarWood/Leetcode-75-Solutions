@@ -1,0 +1,15 @@
+Here in this problem, we have to plant flowers so that no 2 flowers are adjacent. We will check corner cases if length==1.
+if we have empty space and n==1 return true, else if we don't have empty space and don't have to plant any trees then return true. else in all other cases return false. Now coming to the case where length is not equal to 1.
+we will check if the starting two indexes are empty increment count by 1 and make the first index 1 So that if length is less than or equal to 3 we do not count them again while checking the ending two indexes. If the ending two indexes are empty increment count by 1.
+iterate after skipping two indexes from the beginning and from the end.
+if the current index is i and it is zero, its previous index is zero, and its next index is zero again, then increment count by 1.
+Example:
+flowerbed = [1,0,0,0,1], n = 1
+initialise count =0;
+starting both indexes are not zero so no need to increment the count. Same way ending both indexes is not zero  so no need to increment the count again,
+i=2;    i-1==0;  i==0  ; i+1==0 count=1;
+since count>=n  return true.
+
+
+
+
