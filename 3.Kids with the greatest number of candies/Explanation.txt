@@ -1,0 +1,9 @@
+We will find out max candies int the candies array.We have some extra candies. We will iterate through the array and tell whether the candies[i]+extraCandies >=max. If yes then store true; else false.
+Example: candies = [2,3,5,1,3], extraCandies = 3
+maximum candies;  max=5;
+iterate:
+i=0;  2+3>=5;  list=[true];
+i=1;  3+5>=5;  list=[true,true];
+i=2;  5+5>=5;  list=[true,true,true];
+i=3;  1+5<5;   list=[true,true,true,false];
+i=4;  3+3>=5;  list=[true,true,true,false,true];
