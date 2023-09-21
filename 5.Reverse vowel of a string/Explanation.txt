@@ -1,0 +1,34 @@
+In this problem we have to reverse only vowels maintaining the repective position of consonants constant.
+We will traverse the array from beginning, if we found any vowel we start traversing our array from end. If
+we found any vowel again then we swap their respective positions.
+We will use index i traverse forward and index j to traverse backward.
+we will iterate until i<j;
+Example :- Input: s = "leetcode"
+initialise i=0; j=s.length()-1=7;
+i=0; ch=l;  //It is consonant continue;
+i=1; ch=e;  //It is vowel start iterating j from end;
+{   
+    j=7;  ch1=e;  //It is vowel;
+    Interchange the position of ch and ch1;
+    s="leetcode";
+ }
+Currently i=2; j=6;
+start iterating i again:
+i=2;  ch=e;  //It is vowel start iterating j ;
+{
+   j=6; ch1=d;  //It is consonant  continue;
+   j=5; ch1=o;  //It is vowel;
+   Interchange ch and ch1;
+   s="leotcede";
+}
+Currently i=3; j=4;
+start iterating i again:
+i=3;  ch=t;  //It is consonant  continue;
+i=4;
+since  i=4  and j=4   so condition i<j becomes false and our loop terminates
+Final  s="leotcede";
+
+
+
+
+
